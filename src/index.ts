@@ -1,10 +1,12 @@
+import { milliWait } from "rbx-wait"
+
 export class Timeout {
 
     constructor(callback: Function, milliseconds: number, ...args: unknown[]) {
 
-        const seconds = milliseconds / 1000
+        spawn(() => {
 
-        delay(seconds, () => {
+            milliWait(milliseconds)
 
             if (this.running) {
 
@@ -48,7 +50,7 @@ export class Interval {
             
             while (this.running) {
 
-                wait(seconds)
+                milliWait(milliseconds)
 
                 if (this.running) {
 
