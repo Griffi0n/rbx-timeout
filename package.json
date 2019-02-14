@@ -2,8 +2,8 @@
   "name": "rbx-timeout",
   "version": "1.0.0",
   "description": "setTimeout and setInterval for roblox-ts.",
-  "main": "index.lua",
-  "typings": "index.d.ts",
+  "main": "out/init.lua",
+  "typings": "out/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
