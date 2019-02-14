@@ -1,0 +1,17 @@
+{
+  "name": "rbx-timeout",
+  "version": "1.0.0",
+  "description": "setTimeout and setInterval for roblox-ts.",
+  "main": "index.lua",
+  "typings": "index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "TrafficConeGod",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "myURLHere"
+  }
+}
