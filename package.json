@@ -1,11 +1,14 @@
 {
   "name": "rbx-timeout",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "setTimeout and setInterval for roblox-ts.",
   "main": "out/init.lua",
   "typings": "out/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "rbx-wait": "^1.0.1"
   },
   "keywords": [],
   "author": "TrafficConeGod",
