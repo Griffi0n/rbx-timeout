@@ -26,9 +26,9 @@ export class Timeout {
 
 }
 
-export const setTimeout = (callback: Function, milliseconds: number) => {
+export const setTimeout = (callback: Function, milliseconds: number, ...args: unknown[]) => {
     
-    return new Timeout(callback, milliseconds)
+    return new Timeout(callback, milliseconds, ...args)
 
 }
 
@@ -72,9 +72,9 @@ export class Interval {
 
 }
 
-export const setInterval = (callback: Function, milliseconds: number) => {
+export const setInterval = (callback: Function, milliseconds: number, ...args: unknown[]) => {
 
-    return new Interval(callback, milliseconds)
+    return new Interval(callback, milliseconds, ...args)
 
 }
 
