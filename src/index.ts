@@ -1,6 +1,6 @@
 export class Timeout {
 
-    constructor(callback: Function, milliseconds: number) {
+    constructor(callback: Function, milliseconds: number, ...args: unknown[]) {
 
         const seconds = milliseconds / 1000
 
@@ -8,7 +8,7 @@ export class Timeout {
 
             if (this.running) {
 
-                callback()
+                callback(...args)
 
             }
 
@@ -40,7 +40,7 @@ export const clearTimeout = (timeout: Timeout) => {
 
 export class Interval {
 
-    constructor(callback: Function, milliseconds: number) {
+    constructor(callback: Function, milliseconds: number, ...args: unknown[]) {
 
         const seconds = milliseconds / 1000
 
@@ -52,7 +52,7 @@ export class Interval {
 
                 if (this.running) {
 
-                    callback()
+                    callback(...args)
 
                 }
 
